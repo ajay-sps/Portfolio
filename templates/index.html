@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Description" content="Welcome to My Portfolio">
+    <title>Ajay Sihag</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/themify-icons/css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/meyawo.css') }} ">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Portfolio</a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#testmonial">Testmonial</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#blog">Blog</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+                <li class="item ml-md-3">
+                    <a href="components.html" class="btn btn-primary">Components</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">Hello There !</span>
+                <span class="down">I am Ajay Sihag</span>
+            </h1>
+            <p class="header-subtitle">Backend Developer</p>
+
+            <button class="btn btn-primary">Visit My Works</button>
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="{{ url_for('static', filename='image/man.png') }}" class="about-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p>
+                        I'm a versatile backend developer adept at crafting RESTful APIs using Django and Flask, alongside proficiency in web scraping for diverse data acquisition needs. With hands-on experience in designing efficient database schemas, I excel in AWS services like EC2, S3, and Lambda for scalable deployments. My strong foundation in data structures and algorithms ensures optimized code performance. Additionally, I'm skilled in training machine learning and deep learning models using Scikit-learn and PyTorch, facilitating data analysis and predictive modeling for diverse applications.
+                    </p>
+                    <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+                </div>
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+    <!-- service section -->
+    <section class="section" id="service">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Do ?</p>
+            <h6 class="section-title mb-6">Service</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="{{ url_for('static', filename='image/pencil-case.svg') }}"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Adipisicing</h6>
+                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
+                                molestias dolorem iste quod.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="{{ url_for('static', filename='image/responsive.svg') }}"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Sapiente</h6>
+                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
+                                molestias dolorem iste quod.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="{{ url_for('static', filename='image/toolbox.svg') }}"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Placeat</h6>
+                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
+                                molestias dolorem iste quod.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="{{ url_for('static', filename='image/analytics.svg') }}"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Iusto</h6>
+                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
+                                molestias dolorem iste quod.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div>
+    </section><!-- end of service section -->
+
+    <!-- portfolio section -->
+    <section class="section" id="portfolio">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Did ?</p>
+            <h6 class="section-title mb-6">Portfolio</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img src="{{ url_for('static', filename='image/folio-1.jpg') }}" class="portfolio-card-img"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h5>
+                                    <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{ url_for('static', filename='image/folio-2.jpg') }}"
+                            class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h5>
+                                    <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{ url_for('static', filename='image/folio-2.jpg') }}"
+                            class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h4>
+                                <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{ url_for('static', filename='image/folio-3.jpg') }}"
+                            class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h4>
+                                <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div><!-- end of row -->
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img src="{{ url_for('static', filename='image/folio-4.jpg') }}" class="portfolio-card-img"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h4>
+                                <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{ url_for('static', filename='image/folio-5.jpg') }}"
+                            class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h4>
+                                <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{ url_for('static', filename='image/folio-6.jpg') }}"
+                            class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h4>
+                                <p class="font-weight-normal">Category: Web Templates</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div><!-- end of row -->
+        </div>
+    </section><!-- end of portfolio section -->
+
+    <!-- testimonial section -->
+    <section class="section" id="testimonial">
+        <div class="container text-center">
+            <p class="section-subtitle">What My Clients Say ?</p>
+            <h6 class="section-title mb-6">Testimonial</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="body">
+                            <img src="{{ url_for('static', filename='image/user-1.jpg') }}" class="testimonial-img"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                            <h6 class="title">John Doe</h6>
+                            <p class="subtitle">CEO, Company</p>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, culpa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="body">
+                            <img src="{{ url_for('static', filename='image/user-2.jpg') }}" class="testimonial-img"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                            <h6 class="title">Jane Doe</h6>
+                            <p class="subtitle">CTO, Company</p>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, culpa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="body">
+                            <img src="{{ url_for('static', filename='image/user-3.jpg') }}" class="testimonial-img"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                            <h6 class="title">Sam Smith</h6>
+                            <p class="subtitle">Developer, Company</p>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, culpa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div>
+    </section><!-- end of testimonial section -->
+
+    <!-- blog section -->
+    <section class="section" id="blog">
+        <div class="container text-center">
+            <p class="section-subtitle">Recent Posts?</p>
+            <h6 class="section-title mb-6">Blog</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <div class="blog-card-header">
+                            <img src="{{ url_for('static', filename='image/blog-1.jpg') }}" class="blog-card-img"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        </div>
+                        <div class="blog-card-body">
+                            <h5 class="blog-card-title">Blog Post 1</h5>
+                            <p class="blog-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
+                                culpa.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <div class="blog-card-header">
+                            <img src="{{ url_for('static', filename='image/blog-2.jpg') }}" class="blog-card-img"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        </div>
+                        <div class="blog-card-body">
+                            <h5 class="blog-card-title">Blog Post 2</h5>
+                            <p class="blog-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
+                                culpa.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <div class="blog-card-header">
+                            <img src="{{ url_for('static', filename='image/blog-3.jpg') }}" class="blog-card-img"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        </div>
+                        <div class="blog-card-body">
+                            <h5 class="blog-card-title">Blog Post 3</h5>
+                            <p class="blog-card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum,
+                                culpa.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div>
+    </section><!-- end of blog section -->
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How can you communicate?</p>
+            <h6 class="section-title mb-6">Contact Me</h6>
+            <!-- contact form -->
+            <form action="#" class="contact-form col-md-10 col-lg-8 m-auto">
+                <div class="form-row">
+                    <div class="col form-group">
+                        <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="col form-group">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="4" class="form-control" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Send</button>
+            </form><!-- end of contact form -->
+        </div>
+    </section><!-- end of contact section -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="socials-media">
+                <ul class="list-unstyled">
+                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer><!-- end of footer -->
+
+    <!-- Core JS files -->
+    <script src="{{ url_for('static', filename='vendors/jquery/jquery-3.4.1.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendors/bootstrap/bootstrap.bundle.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendors/bootstrap/bootstrap.affix.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/meyawo.js') }}"></script>
+
+</body>
+
+</html>
