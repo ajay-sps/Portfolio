@@ -12232,3 +12232,42 @@ pre .code {
 .section-lg {
   padding: 100px 0 !important;
 }
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-item i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.contact-item a {
+  color: #333; /* Adjust link color as needed */
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.contact-form {
+  margin-top: 40px;
+}
+
+.contact-form .form-control {
+  margin-bottom: 15px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}

@@ -8,6 +8,8 @@
     <title>Ajay Sihag</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='vendors/themify-icons/css/themify-icons.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/meyawo.css') }} ">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="{{ url_for('static', filename='favicon/favicon-32x32.png') }}">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -48,7 +50,9 @@
             </h1>
             <p class="header-subtitle">Backend Developer</p>
 
-            <button class="btn btn-primary">Visit My Works</button>
+            <a href="https://github.com/ajay-sps" target="_blank">
+                <button class="btn btn-primary">Visit My Works</button>
+            </a>
         </div>
     </header><!-- end of page header -->
 
@@ -65,9 +69,16 @@
                 <div class="about-caption">
                     <h2 class="section-title mb-3">About Me</h2>
                     <p>
-                        I'm a versatile backend developer adept at crafting RESTful APIs using Django and Flask, alongside proficiency in web scraping for diverse data acquisition needs. With hands-on experience in designing efficient database schemas, I excel in AWS services like EC2, S3, and Lambda for scalable deployments. My strong foundation in data structures and algorithms ensures optimized code performance. Additionally, I'm skilled in training machine learning and deep learning models using Scikit-learn and PyTorch, facilitating data analysis and predictive modeling for diverse applications.
+                        I'm a versatile backend developer adept at crafting RESTful APIs using Django and Flask,
+                        alongside proficiency in web scraping for diverse data acquisition needs. With hands-on
+                        experience in designing efficient database schemas, I excel in AWS services like EC2, S3, and
+                        Lambda for scalable deployments. My strong foundation in data structures and algorithms ensures
+                        optimized code performance. Additionally, I'm skilled in training machine learning and deep
+                        learning models using Scikit-learn and PyTorch, facilitating data analysis and predictive
+                        modeling for diverse applications.
                     </p>
-                    <a href="https://docs.google.com/document/d/1FBN98FMZDGUP3-fxjwdMANsAcbzQrnHsVfPRWIFVQjg/edit#heading=h.gjdgxs">
+                    <a href="https://docs.google.com/document/d/1FBN98FMZDGUP3-fxjwdMANsAcbzQrnHsVfPRWIFVQjg/edit#heading=h.gjdgxs"
+                        target="_blank">
                         <button class="btn-rounded btn btn-outline-primary mt-4">View CV</button>
                     </a>
                 </div>
@@ -84,7 +95,7 @@
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
                         <img src="{{ url_for('static', filename='image/recipes.jpeg') }}" class="portfolio-card-img"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                            style="width: 100%; height: auto;">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Manage Recipes</h5>
@@ -96,8 +107,7 @@
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
                         <img class="portfolio-card-img" src="{{ url_for('static', filename='image/ecommerce.jpeg') }}"
-                            class="img-responsive rounded"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                            class="img-responsive rounded" style="width: 100%; height: auto;">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>eCommerce Site</h5>
@@ -109,8 +119,19 @@
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card">
                         <img class="portfolio-card-img" src="{{ url_for('static', filename='image/chat.png') }}"
-                            class="img-responsive rounded"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                            class="img-responsive rounded">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Chat with WebPage</h4>
+                                <p class="font-weight-normal">Here just paste the URL and Chat with Webpage</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="portfolio-card">
+                        <img class="portfolio-card-img" src="{{ url_for('static', filename='image/chat.png') }}"
+                            class="img-responsive rounded">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Chat with WebPage</h4>
@@ -123,28 +144,31 @@
         </div>
     </section><!-- end of portfolio section -->
 
-    <!-- contact section -->
     <section class="section" id="contact">
         <div class="container text-center">
-            <p class="section-subtitle">How can you communicate?</p>
             <h6 class="section-title mb-6">Contact Me</h6>
-            <!-- contact form -->
-            <form action="#" class="contact-form col-md-10 col-lg-8 m-auto">
-                <div class="form-row">
-                    <div class="col form-group">
-                        <input type="text" class="form-control" placeholder="Your Name">
-                    </div>
-                    <div class="col form-group">
-                        <input type="email" class="form-control" placeholder="Your Email">
-                    </div>
+            <!-- Contact information -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:youremail@example.com">youremail@example.com</a>
                 </div>
-                <div class="form-group">
-                    <textarea name="message" rows="4" class="form-control" placeholder="Your Message"></textarea>
+                <div class="contact-item">
+                    <i class="fa fa-phone"></i>
+                    <a href="tel:+1234567890">+1 234 567 890</a>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block">Send</button>
-            </form><!-- end of contact form -->
+                <div class="contact-item">
+                    <i class="fa fa-github"></i>
+                    <a href="https://github.com/yourusername">github.com/yourusername</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fa fa-linkedin"></i>
+                    <a href="https://linkedin.com/in/yourusername">linkedin.com/in/yourusername</a>
+                </div>
+            </div>
         </div>
     </section><!-- end of contact section -->
+
 
     <!-- footer -->
     <footer class="footer">
@@ -157,7 +181,7 @@
                     <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
                 </ul>
             </div>
-            <p>&copy; 2024 Your Company. All rights reserved.</p>
+            <p>&copy; 2024 Ajay Sihag. All rights reserved.</p>
         </div>
     </footer><!-- end of footer -->
 
